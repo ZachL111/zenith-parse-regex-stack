@@ -1,0 +1,7 @@
+name,demand,capacity,latency,risk,weight,score,decision,reason
+baseline,67,84,20,11,6,90,review,parsers baseline scenario exercises the review path for bounded failure handling
+pressure,79,71,29,18,10,35,review,parsers pressure scenario exercises the review path for bounded failure handling
+surge,98,100,21,14,11,161,review,parsers surge scenario exercises the review path for bounded failure handling
+degraded,71,60,36,27,6,-86,review,parsers degraded scenario exercises the review path for bounded failure handling
+recovery,83,102,22,12,9,135,review,parsers recovery scenario exercises the review path for bounded failure handling
+boundary,73,82,25,15,7,59,review,parsers boundary scenario exercises the review path for bounded failure handling
