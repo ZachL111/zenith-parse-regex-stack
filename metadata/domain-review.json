@@ -1,0 +1,73 @@
+{
+  "repo": "zenith-parse-regex-stack",
+  "language": "Ruby",
+  "category": "Parsers",
+  "goal": "Implement a Ruby parsers project for regex visual model generation, using layout fixtures and stable geometry snapshots.",
+  "review_model": {
+    "terms": [
+      "token drift",
+      "grammar width",
+      "label quality",
+      "error locality"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "token drift",
+      "signal": 43,
+      "slack": 32,
+      "drag": 12,
+      "confidence": 82,
+      "score": 164,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "grammar width",
+      "signal": 58,
+      "slack": 53,
+      "drag": 32,
+      "confidence": 91,
+      "score": 164,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "label quality",
+      "signal": 78,
+      "slack": 30,
+      "drag": 19,
+      "confidence": 56,
+      "score": 185,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "error locality",
+      "signal": 73,
+      "slack": 31,
+      "drag": 14,
+      "confidence": 47,
+      "score": 182,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "token drift",
+      "signal": 80,
+      "slack": 25,
+      "drag": 10,
+      "confidence": 58,
+      "score": 213,
+      "lane": "ship"
+    }
+  ]
+}
